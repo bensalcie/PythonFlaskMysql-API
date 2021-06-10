@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All users</title>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+<table border="3" width="100%" class="table">
+  <tr>
+    <th>
+      Id
+    </th>
+    <th>
+      Username
+    </th>
+    <th>
+      Email
+    </th>
+     <th>
+      Password
+    </th>
+  </tr>
+     {%  for user in userdetails %}
+       <tr>
+         <td>{{user[0]}}</td>
+         <td>{{user[1]}}</td>
+         <td>{{user[2]}}</td>
+          <td>{{user[3]}}</td>
+      </tr>
+
+  {% endfor %}
+
+</table>
+
+
+</body>
+</html>
