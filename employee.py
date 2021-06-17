@@ -35,7 +35,6 @@ def getall():
     results = cur.execute("SELECT * FROM employee")
     status = 1
     userdata = []
-
     message = "No Records were found"
     if results > 0:
         status = 0

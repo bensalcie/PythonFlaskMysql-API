@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h1>Employees</h1>
+    <table border="2" width="100%">
+      <tr>
+      <th>ID Numbers</th>
+      <th>Name</th>
+      <th>Age</th>
+    </tr>
+  {% for employee in data %}
+      <tr>
+        <td>
+          {{employee["idNumbers"]}}
+        </td>
+         <td>
+          {{employee["name"]}}
+        </td>
+         <td>
+          {{employee["age"]}}
+        </td>
+              <td>
+          {{employee["age"]}}
+        </td>
+      </tr>
+
+
+  {% endfor %}
+        </table>
+
+</body>
+</html>
